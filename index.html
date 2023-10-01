@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Europareise</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Maristen-Gymnasium Furth">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1 id="headingStart">Europareise</h1>
+    <form id="playerAmountSelectForm">
+        <!-- Player Amount Selector -->
+        <div id="inlinePlayerAmount">
+            <p id="playerAmountText">Spieleranzahl auswählen: </p>
+            <select id="playerAmountSelect" title="Spieleranzahl auswählen">
+                <option value="0" disabled selected id="choosePlayerAmountMessage">Wählen Sie aus</option>
+                <option value="2P">2</option>
+                <option value="3P">3</option>
+                <option value="4P">4</option>
+            </select>
+        </div>
+        <table>
+            <tbody id="playerNamesTbody"></tbody>
+        </table>
+        <input type="submit" id="checkButton" value="Spiel starten">
+        <div id="errorMessage"></div>
+    </form>
+    <form id="langSelectForm">
+        <select id="langSelect" aria-label="Select language">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+        </select>
+    </form>
+    <script src="js/index.js"></script>
+</body>
+</html>

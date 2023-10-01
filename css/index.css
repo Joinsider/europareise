@@ -1,0 +1,73 @@
+/* Globale Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ändere justify-content auf flex-start */
+    height: 100vh;
+}
+
+/* Überschriftsstil mit Abstand oben */
+#headingStart {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px; /* Abstand oben hinzufügen */
+}
+
+#playerAmountSelectForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#errorMessage {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#inlinePlayerAmount {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#playerAmountSelect {
+    margin-left: 10px;
+}
+
+#playerNamesTbody {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+/* Sprachauswahl am unteren rechten Eck */
+#langSelectForm {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+select {
+    padding: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 5px;
+    font-size: 1rem;
+}
