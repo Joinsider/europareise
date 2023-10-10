@@ -1,0 +1,20 @@
+{
+    "de": {
+      "headingStart": "Spiel starten",
+      "playerAmountText": "Anzahl der Spieler:",
+      "checkButton": "Überprüfen",
+      "choosePlayerAmountMessage": "Wähle die Anzahl der Spieler aus:",
+      "player": "Spieler",
+      "errorMessagePlayerAmount": "Bitte wähle eine gültige Anzahl von Spielern aus.",
+      "errorMessagePlayerNames": "Bitte fülle alle Spielerfelder aus."
+    },
+    "en": {
+        "headingStart": "Journey through Europe",
+        "playerAmountTex": "Choose number of players: ",
+        "checkButton": "Start Game",
+        "choosePlayerAmountMessage": "Please choose",
+        "errorMessagePlayerAmount": "Please choose a valid number of players. Min. 2",
+        "errorMessagePlayerNames": "Please fill out all player fields.",
+        "player": "Player"
+    }
+  }
