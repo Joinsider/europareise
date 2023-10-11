@@ -1,0 +1,117 @@
+{
+    "cities": [
+        {"name": "Itchen", "coords": [794, 530]},
+        {"name": "Woolston", "coords": [770, 657]},
+        {"name": "Weston", "coords": [925, 801]},
+        {"name": "Sholing", "coords": [1087, 528]},
+        {"name": "Thornhill", "coords": [1235, 388]},
+        {"name": "Bitterne", "coords": [931, 291]},
+        {"name": "Bitterne Park", "coords": [744, 109]},
+        {"name": "Portswood", "coords": [541, 85]},
+        {"name": "Common", "coords": [353, 40]},
+        {"name": "Shirley", "coords": [175, 119]},
+        {"name": "City Center", "coords": [413, 472]},
+        {"name": "Ocean Village", "coords": [530, 616]}
+    ],
+
+    "links": [
+        {"cities": [6, 11],
+         "type": "sea"},
+
+        {"cities": [7, 9],
+         "type": "air",
+         "cost": 2},
+
+        {"cities": [9, 10],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [7, 10],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [0, 10],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [5, 10],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [3, 10],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [0, 3],
+         "type": "air",
+         "cost": 2},
+
+        {"cities": [0, 5],
+         "type": "air",
+         "cost": 2},
+
+        {"cities": [3, 5],
+         "type": "air",
+         "cost": 2},
+
+        {"cities": [0, 1],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [1, 3],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [1, 5],
+         "type": "air",
+         "cost": 4},
+
+        {"cities": [8, 9],
+         "type": "land"},
+
+        {"cities": [7, 8],
+         "type": "land"},
+
+        {"cities": [8, 10],
+         "type": "land"},
+
+        {"cities": [7, 10],
+         "type": "land"},
+
+        {"cities": [10, 11],
+         "type": "land"},
+
+        {"cities": [6, 7],
+         "type": "land"},
+
+        {"cities": [0, 11],
+         "type": "land"},
+
+        {"cities": [5, 6],
+         "type": "land"},
+
+        {"cities": [0, 5],
+         "type": "land"},
+
+        {"cities": [0, 1],
+         "type": "land"},
+
+        {"cities": [1, 2],
+         "type": "land"},
+
+        {"cities": [2, 3],
+         "type": "land"},
+
+        {"cities": [3, 4],
+         "type": "land"},
+
+        {"cities": [4, 5],
+         "type": "land"},
+
+        {"cities": [0, 3],
+         "type": "land"},
+
+        {"cities": [3, 5],
+         "type": "land"}
+    ]
+}

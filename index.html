@@ -6,6 +6,14 @@
     <meta name="author" content="Maristen-Gymnasium Furth">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
+    <script>
+        // On load check if there is a language selected if not set it to german
+        if (localStorage.getItem("lang") === null) {
+            localStorage.setItem("lang", "de");
+            const langSelect = document.getElementById("langSelect");
+            langSelect.value = "de";
+        }
+    </script>
 </head>
 <body>
     <h1 id="headingStart">Europareise</h1>

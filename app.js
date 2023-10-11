@@ -4,7 +4,6 @@ const path = require('path');
 
 const server = http.createServer((req, res) => {
     const { url } = req;
-
     if (url === '/') {
         const filePath = path.join(__dirname, 'index.html');
         fs.readFile(filePath, 'utf8', (err, data) => {
@@ -38,9 +37,42 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, { 'Content-Type': 'text/css' });
             res.end(data);
         });
+    } else if (url === '/game_start'){
+        const filePath = path.join(__dirname, 'game_start.html');
+        fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+                res.writeHead(500);
+                res.end('Internal Server Error');
+                return;
+            }
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.end(data);
+        });
+    } else if (url === '/js/game_start.js') {
+        const filePath = path.join(__dirname, 'js/game_start.js');
+        fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+                res.writeHead(500);
+                res.end('Internal Server Error');
+                return;
+            }
+            res.writeHead(200, { 'Content-Type': 'application/javascript' });
+            res.end(data);
+        });
+    } else if (url === '/css/game_start.css') {
+        const filePath = path.join(__dirname, 'css/game_start.css');
+        fs.readFile(filePath, 'utf8', (err, data) => {
+            if (err) {
+                res.writeHead(500);
+                res.end('Internal Server Error');
+                return;
+            }
+            res.writeHead(200, { 'Content-Type': 'text/css' });
+            res.end(data);
+        });
     } else {
         res.writeHead(404);
-        res.end('Not Found');
+        res.end('404 Not Found');
     }
 });
 

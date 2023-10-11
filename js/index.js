@@ -142,7 +142,7 @@ function checkForm(event) {
             errorMessage.textContent = languageText[lang].errorMessagePlayerNames;
         } else {
             errorMessage.textContent = '';
-            window.location.href = "game_start.html";
+            window.location.href = "game_start";
         }
     }
 }
