@@ -9,8 +9,6 @@ const languageText = {
         errorMessagePlayerAmount: "Bitte wählen Sie eine gültige Spieleranzahl aus. Mind. 2",
         errorMessagePlayerNames: "Bitte füllen Sie alle Spielerfelder aus.",
         player: "Spieler",
-        loadGameText: "Spiel aus Speicher laden",
-        loadGameButton: "Spiel laden",
     },
     en: {
         headingStart: "Journey through Europe",
@@ -20,10 +18,13 @@ const languageText = {
         errorMessagePlayerAmount: "Please choose a valid number of players. Min. 2",
         errorMessagePlayerNames: "Please fill out all player fields.",
         player: "Player",
-        loadGameText: "Load game from storage",
-        loadGameButton: "Load game",
     }
 };
+
+
+// Importiere die Sprachtexte aus der Json Datei und speichere sie in der Konstante languageText
+
+
 
 const playerNameCheck = {};
 
@@ -56,12 +57,10 @@ function langChange() {
         changeLanguage();
         localStorage.setItem('lang', lang);
         console.log("Sprache geändert zu " + chosenLang);
+        const langSelectElement = document.getElementById('langSelect');
+        langSelectElement.value = chosenLang;
     } else {
         console.log('Bereits ausgewählt oder nicht vorhanden');
-    }
-    const savedGame = localStorage.getItem('game');
-    if (savedGame !== null) {
-        showLoadGameButton();
     }
 }
 
@@ -73,17 +72,6 @@ window.addEventListener('load', () => {
     langSelectElement.value = savedLang;
     langChange();
 });
-
-function showLoadGameButton() {
-    const loadGameForm = document.getElementById('loadGameForm');
-    const loadGameButton = document.getElementById('loadGameButton');
-    loadGameForm.style.display = 'block';
-    loadGameButton.addEventListener('click', redirectToLoadGame);
-}
-
-function redirectToLoadGame() {
-    window.location.href = "game_load.html";
-}
 
 const removeGame = document.getElementById('removeGame');
 removeGame.addEventListener('click', removeGameFromStorage);
@@ -158,3 +146,4 @@ function checkForm(event) {
         }
     }
 }
+

@@ -7,6 +7,7 @@
       "player": "Spieler",
       "errorMessagePlayerAmount": "Bitte wähle eine gültige Anzahl von Spielern aus.",
       "errorMessagePlayerNames": "Bitte fülle alle Spielerfelder aus."
+      
     },
     "en": {
         "headingStart": "Journey through Europe",

@@ -21,4 +21,4 @@ const languageText = {
     }
 };
 
-export { languageText };
+export default languageText;

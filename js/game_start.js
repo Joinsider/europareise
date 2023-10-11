@@ -6,3 +6,4 @@ navigateButton.addEventListener("click", function () {
   // Change the window location to page2.html
   window.location.href = "index.html";
 });
+
